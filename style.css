@@ -1,0 +1,155 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);      
+}
+
+.Container{
+    width: 605px;
+    /* background: rgba(250, 246, 235, 0.619); */
+    background: rgba(251, 255, 194, 0.775);
+    background: radial-gradient(circle, rgba(249, 251, 230, 0.878) 15%, rgba(249, 249, 249, 0.977) 100%);
+    border-radius: 15px;
+    padding: 30px 30px 25px;
+    /* border: 1px solid red; */
+    box-shadow: 0 12px 35px rgba(0,0,0,0.1);
+
+}
+
+header .quoteContentBox:where(i, p, span){
+    color: #202842;
+}
+
+.Container header{
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(86, 10, 71);
+    font-weight: bold;
+}
+
+.Container .quoteContentBox{
+    margin: 35px 0;
+}
+
+
+.quoteContentBox .quoteArea{
+    display: flex;
+    justify-content: center;
+}
+
+.quoteArea i{
+    font-size: 15px;
+}
+
+.quoteArea i:first-child{
+    margin: 3px 10px 0 0;
+}
+  
+.quoteArea i:last-child{
+    display: flex;
+    margin: 0 0 3px 10px;
+    align-items: flex-end;
+}
+
+
+.quoteArea .quote{
+    font-size: 22px;
+    text-align: center;
+    word-break: break-all;
+}
+  
+.quoteContentBox .quoteAuthor{
+    display: flex;
+    font-size: 18px;
+    margin-top: 20px;
+    font-style: italic;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+.quoteAuthor span:first-child{
+    margin: -7px 5px 0 0;
+    font-family: monospace;
+}
+  
+.Container .buttons{
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features{
+    display: flex;
+    margin-top: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.features ul{
+    display: flex;
+}
+  
+.features ul li{
+    margin: 0 5px;
+    height: 47px;
+    width: 47px;
+    display: flex;
+    cursor: pointer;
+    color: #540974bf;
+    list-style: none;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #2f045fec;
+    transition: all 0.3s ease;
+}
+  
+.features ul li:first-child{
+    margin-left: 0;
+}
+  
+ul li:is(:hover, .active){
+    color: #fff;
+    background: #8a68f1;
+    /* border: 0px ; */
+}
+
+
+ul .speech.active{
+    pointer-events: none;
+}
+
+/* .buttons{
+    border: 1px solid red ;
+} */
+
+.buttons button{
+    border: none;
+    color: #fff;
+    outline: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 13px 22px;
+    border-radius: 30px;
+    background: #5372F0;
+}
+.buttons button{
+    color: white;
+    background: rgba(33, 2, 31, 0.619);
+}
+.buttons button.loading{
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+/* @mondalCodeHub(October 2022) */
